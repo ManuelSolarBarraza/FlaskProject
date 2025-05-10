@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Calculadora de Notas</h1>
+    <form method="POST">
+        <label>Nota 1 (10-70): <input type="number" name="nota1" min="10" max="70" required></label><br>
+        <label>Nota 2 (10-70): <input type="number" name="nota2" min="10" max="70" required></label><br>
+        <label>Nota 3 (10-70): <input type="number" name="nota3" min="10" max="70" required></label><br>
+        <label>Asistencia (0-100%): <input type="number" name="asistencia" min="0" max="100" required></label><br>
+        <button type="submit">Calcular</button>
+    </form>
+    <a href="/" class="btn">Volver al menú</a>
+{% endblock %}
